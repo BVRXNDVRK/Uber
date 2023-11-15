@@ -2,7 +2,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
-button {
+.button {
+    width: 172px;
+    height: 46px; 
+    font-size: 14px;
     border-radius: 4px;
     background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
     box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.12) inset;  
@@ -13,7 +16,48 @@ button {
     text-transform: uppercase;
 }
 
+.button_big {
+    width: 259px;
+    height: 63px;
+    font-size: 18px;
+}
+
+.secondaryButton {
+    display: block;
+    width: 113px;
+    height: 24px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-color: #000;
+    border: none;
+    color: #FFF;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.secondaryButton_white {
+    background-color: #fff;
+    color: #000;
+}
+
+.title {
+    color: #222;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700; 
+    text-transform: uppercase;
+}
+
+.title_white {
+    color: #fff;
+}
+
 .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
     background-color: #212121;
 }
 
@@ -110,14 +154,9 @@ button {
     text-transform: uppercase;
 }
 
-.subheader__contact-button {
-    width: 172px;
-    height: 46px; 
-    font-size: 14px;
-}
-
 .hero {
     height: calc(100vh - 50px);
+    margin-top: 50px;
     padding: 148px 0 186px 0;
     background: url('../images/uber_bg.jpg') center/cover no-repeat;
     text-align: center;
@@ -145,8 +184,46 @@ button {
     margin-bottom: 115px;
 }
 
-.hero__button {
-    width: 259px;
-    height: 63px;
-    font-size: 18px;
+.reasons {
+    padding: 18px 0 67px 0;
+}
+
+.reasons__title {
+    margin-bottom: 16px;
+}
+
+.reasons__card {
+    width: 512px;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 26px;
+}
+
+.reasons__image-wrapper {
+    width: 116px;
+    height: 116px;
+    border-radius: 50%;
+    margin-right: 25px;
+    background-color: #1EACC7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reasons__wrapper {
+    width: 371px;
+}
+
+.reasons__card-title {
+    color: #1EACC7;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.reasons__card-text {
+    color: #202020;
+    font-size: 15px;
+    font-weight: 300;
 }
