@@ -1,0 +1,30 @@
+.hero {
+    height: calc(100vh - 50px);
+    margin-top: 50px;
+    padding: 148px 0 186px 0;
+    background: url('../images/uber_bg.jpg') center/cover no-repeat;
+    text-align: center;
+
+    &__title {
+        color: #FFF;
+        font-size: 60px;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+    
+    &__subtitle {
+        color: #FFF;
+        font-size: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    
+    &__text {
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 115px;
+    }
+}
+

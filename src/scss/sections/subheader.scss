@@ -1,0 +1,51 @@
+.subheader {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    
+    &__wrapper {
+        height: 81px;
+        padding: 0 97px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__logo {   
+        &-img {
+            width: 60px;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        &-text {
+            display: inline-block;
+            color: #FFF;
+            font-size: 18px;
+            font-weight: 300;
+        }
+    }
+    
+    
+    &__contact {
+        display: flex;
+
+        &-wrapper {
+            margin-right: 32px;
+            color: #fff;
+        }
+
+        &-text {
+            text-align: right;
+            font-size: 12px;
+            font-weight: 300;
+        }
+
+        &-phone {
+            font-size: 22px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+    }
+}

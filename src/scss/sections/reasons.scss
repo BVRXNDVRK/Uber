@@ -1,0 +1,43 @@
+.reasons {
+    padding: 18px 0 67px 0;
+    
+    &__title {
+        margin-bottom: 16px;
+    }
+    
+    &__card {
+        width: 512px;
+        min-height: 150px;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 26px;
+
+        &-title {
+            color: #1EACC7;
+            font-size: 17px;
+            font-weight: 400;
+        }
+        
+        &-text {
+            color: #202020;
+            font-size: 15px;
+            font-weight: 300;
+        }
+    }
+
+    &__image-wrapper {
+        width: 116px;
+        height: 116px;
+        border-radius: 50%;
+        margin-right: 25px;
+        background-color: #1EACC7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__wrapper {
+        width: 371px;
+    } 
+}
