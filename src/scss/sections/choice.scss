@@ -1,0 +1,15 @@
+.choice {
+    padding: 57px 0 137.5px 0;
+    background: url(../images/choice_bg.png) center center/cover no-repeat;
+    text-align: center;
+
+    &__subtitle {
+        margin-bottom: 54px;
+    }
+
+    &__text {
+        color: #222;
+        font-size: 17px;
+        font-weight: 300;
+    }
+}
