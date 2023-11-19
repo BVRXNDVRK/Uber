@@ -1,0 +1,18 @@
+.worldwide {
+    position: relative;
+    height: 720px;
+    padding-top: 46px;
+    background: url(../images/map.jpg) center center/cover no-repeat;
+
+    &__link {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #1FBAD6;
+        font-size: 15px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}
