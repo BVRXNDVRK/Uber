@@ -34,13 +34,13 @@
                 left: -33px;
                 display: block;
                 width: 21px;
-                height: 21px;
-                background: url(../icons/blue_check.png)
+                height: 20px;
+                background: url(../icons/blue_check.png) no-repeat;
             }
 
             &_red-check {
                 &:before {
-                    background: url(../icons/red_check.png)
+                    background: url(../icons/red_check.png) no-repeat;
                 }
             }
         }
