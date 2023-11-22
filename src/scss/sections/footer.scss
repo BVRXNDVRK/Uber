@@ -21,6 +21,7 @@
             position: relative;
             color: #fff;
             text-decoration: none;
+            transition: all 0.2s ease-in-out;
 
             &:before {
                 content: '';
@@ -31,6 +32,10 @@
                 height: 35px;
                 border-radius: 50%;
                 background-color: #000;
+            }
+
+            &:hover {
+                transform: translateY(-5px);
             }
         }
     }
@@ -55,11 +60,35 @@
         list-style: none;
 
         &-item {
+            position: relative;
             color: #070716;
             font-size: 15px;
             font-weight: 300;
             text-transform: uppercase;
             text-decoration: none;
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: 0;
+                width: 0;
+                height: 1px;
+                background-color: #070716;
+                transition: all 0.2s ease-in-out;
+            }
+
+            &:hover:before {
+                width: 100%;
+            }
+
+            &:active {
+                color: #5f6167;
+    
+                &:before {
+                    background-color: #5f6167;
+                }
+            }
         }
     }
 
@@ -70,11 +99,35 @@
         list-style: none;
 
         &-item {
+            position: relative;
             color: #999;
             font-size: 11px;
             font-weight: 300;
             text-transform: uppercase;
             text-decoration: none;
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: 0;
+                width: 0;
+                height: 1px;
+                background-color: #999;
+                transition: all 0.2s ease-in-out;
+            }
+    
+            &:hover:before {
+                width: 100%;
+            }
+
+            &:active {
+                color: #5f6167;
+    
+                &:before {
+                    background-color: #5f6167;
+                }
+            }
         }
     }
 
@@ -83,5 +136,13 @@
         top: 50%;
         right: 23px;
         transform: translateY(-50%);
+
+        &-img {
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+        }
     }
 }

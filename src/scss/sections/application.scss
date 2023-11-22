@@ -35,6 +35,31 @@
             border: none;
             border-radius: 50%;
             background-color: #000;
+
+            &:before {
+                content: '';
+                width: 14px;
+                height: 2px;
+                background-color: #1EACC7;
+                transition: all 0.5s;
+            }
+
+            &:after {
+                content: '';
+                width: 2px;
+                height: 14px;
+                position: absolute;
+                background-color: #1EACC7;
+                right: 50%;
+                transform: translateX(50%);
+                transition: all 0.5s;
+            }
+
+            &:hover {
+                &:before, &:after {
+                        background-color: #FF5656;
+                    } 
+            }
         }
         
         &-img {

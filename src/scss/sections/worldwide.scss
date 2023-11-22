@@ -14,5 +14,48 @@
         font-weight: 400;
         text-transform: uppercase;
         text-decoration: none;
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: #1FBAD6;
+            transition: all 0.2s ease-in-out;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: #1FBAD6;
+            transition: all 0.2s ease-in-out;
+        }
+
+        &:hover {
+            &:before {
+                width: 50%;
+                left: 0;
+            }
+
+            &:after {
+                width: 50%;
+            }
+        }
+
+        &:active {
+            color: #5f6167;
+
+            &:before, &:after {
+                background-color: #5f6167;
+            }
+        }
     }
 }
