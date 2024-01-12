@@ -54,7 +54,8 @@
     }
 
     &__menu {
-        min-width: 365px;
+        width: 365px;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         list-style: none;
@@ -93,7 +94,7 @@
     }
 
     &__submenu {
-        min-width: 390px;
+        width: 390px;
         display: flex;
         justify-content: space-between;
         list-style: none;

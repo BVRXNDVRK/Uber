@@ -7,6 +7,10 @@
 
     &__navbar {
         height: 50px;
+
+        &_active {
+            left:0;
+        }
     }
     
     &__list {
@@ -54,6 +58,42 @@
         }
     }
     
+    &__burger {
+        display: none;
+        height: 12px;
+        position: fixed;
+        right: 28px;
+        top: 25px;
+        transform: translateY(-50%);
+        flex-direction: column;
+        justify-content: space-between; 
+
+        &-line {
+            display: block;
+            width: 30px;
+            height: 2px;
+            background-color: #fff;
+            transition: all 1s ease-in-out;
+        }
+
+        &_active {
+            .header__burger-line {
+                &:nth-child(1) {
+                    transform: rotate(45deg) translateY(3px) translateX(4px);
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;;
+                }
+
+                &:nth-child(3) {
+                    transform: rotate(-45deg) translateY(-3px) translateX(4px);
+                }
+            }
+        }
+    }
+
+
 }
 
 

@@ -1,0 +1,81 @@
+@media (max-width: 992px) {
+    .header {
+        &__list {
+            &-item {
+                &:not(:last-child):after {
+                    right: -11px;
+                }
+            }
+        }
+
+        &__link {
+            font-size: 12px;
+        }
+    }
+
+    .subheader {
+        &__logo {
+            &-text {
+                display: none;
+            }
+        }
+    }
+
+    .hero {
+        &__title {
+            font-size: 53px;
+        }
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .reasons {
+        padding-bottom: 30px;
+
+        &__card {
+            flex-direction: column;
+            min-height: 300px;
+        }
+
+        &__image {
+            &-wrapper {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .application {
+        &__card {
+            width: 225px;
+            height: 225px;
+
+            &-title {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .choice {
+        &__img {
+            width: 700px
+        }
+    }
+
+    .footer {
+        &__socials {
+            width: 135px;
+            left: 30px;
+        }
+
+        &__submenu {
+            width: 365px;
+        }
+
+        &__apps {
+            right: 49px;
+        }
+    }
+}

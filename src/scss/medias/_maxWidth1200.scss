@@ -1,0 +1,48 @@
+@media (max-width: 1200px) {
+    .header {
+        &__list {
+            &-item {
+                &:not(:last-child):after {
+                    right: -23px;
+                }
+            }
+        }
+    }
+
+    .hero {
+       &__title {
+            font-size: 55px;
+        }
+    }
+
+    .reasons{
+        &__wrapper {
+            width: 305px;
+        }
+    }
+        
+
+    .application {
+        &__card {
+            width: 300px
+        }
+    }
+
+    .footer {
+        &__socials {
+            left: 60px;
+        }
+
+        &__apps {
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            right: 95px;
+        
+            &-img {
+                width: 100px;
+            }
+        }
+    }
+}
