@@ -1,4 +1,16 @@
 @media (max-width: 992px) {
+    .button {
+        &:hover {
+            background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+        }
+    }
+
+    .secondaryButton {
+        &:hover {
+            transform: scale(1);
+        }
+    }
+
     .header {
         &__list {
             &-item {
@@ -22,6 +34,8 @@
     }
 
     .hero {
+        height: 100%;
+
         &__title {
             font-size: 53px;
         }
@@ -55,6 +69,14 @@
             &-title {
                 font-size: 18px;
             }
+
+            &-btn {
+                &:hover {
+                    &:before, &:after {
+                        background-color: #1EACC7;
+                    }
+                }
+            }
         }
     }
 
@@ -64,18 +86,64 @@
         }
     }
 
+    .worldwide__link {
+        &:before, &:after {
+            display: none;
+        }
+    }
+
     .footer {
         &__socials {
             width: 135px;
             left: 30px;
+
+            &-icon {
+                &:hover {
+                    transform: translateY(0);
+                }
+            }
+        }
+
+        &__menu {
+            &-item {
+                &:before {
+                    display: none;
+                }
+            }
         }
 
         &__submenu {
             width: 365px;
+
+            &-item {
+                &:before {
+                    display: none;
+                }
+            }
         }
 
         &__apps {
             right: 49px;
+
+            &-img {
+                &:hover {
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .header {
+        &__link {
+            &:hover {
+                font-size: 12px;
+            }
+
+            &:active {
+                color: #fff;
+            }
         }
     }
 }
